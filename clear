@@ -1,0 +1,19 @@
+[1mdiff --git a/src/pages/IndexPage.vue b/src/pages/IndexPage.vue[m
+[1mindex 450c64d..6824ad3 100644[m
+[1m--- a/src/pages/IndexPage.vue[m
+[1m+++ b/src/pages/IndexPage.vue[m
+[36m@@ -17,11 +17,11 @@[m
+         filled[m
+         type="number"[m
+         v-model="age"[m
+[31m-        label="อายุ: *"[m
+[32m+[m[32m        label="Your age *"[m
+         lazy-rules[m
+         :rules="[[m
+[31m-          val => val !== null && val !== '' || 'กรุณาพิมพ์อายุของคุณ',[m
+[31m-          val => val > 0 && val < 100 || 'กรุณาใส่อายุที่ถูกต้อง (1-99)'[m
+[32m+[m[32m          val => val !== null && val !== '' || 'Please type your age',[m
+[32m+[m[32m          val => val > 0 && val < 100 || 'Please type a real age'[m
+         ]"[m
+       />[m
+       <q-toggle v-model="accept" label="I accept the license and terms" />[m
